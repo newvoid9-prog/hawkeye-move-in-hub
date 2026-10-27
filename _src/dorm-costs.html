@@ -1,0 +1,170 @@
+    <section class="wrap hero" aria-labelledby="hero-heading">
+      <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="./">Home</a></li><li aria-current="page">Dorm Costs</li></ol></nav>
+        <p class="eyebrow">Budgeting</p>
+        <h1 id="hero-heading">University of Iowa dorm costs for 2026-27, <span class="mark">by hall and room type</span></h1>
+        <p class="lede">Your housing bill is two charges, not one: the room and a required meal plan. Here is what each costs this year, plus a calculator for what your year really adds up to.</p>
+        <p class="byline">By Desmond Okafor · Updated October 27, 2026 · 6 min read</p>
+      </div>
+      <div class="hero-art">
+        <img src="img/dorm-costs.svg" width="480" height="360" alt="Stacked bars comparing yearly University of Iowa dorm bills, split into room cost and meal plan cost" fetchpriority="high">
+      </div>
+    </section>
+
+    <dl class="stats wrap" aria-label="2026-27 cost range">
+      <div class="stat"><dt class="stat-label">Cheapest room (Hillcrest quad)</dt><dd class="stat-num">$6,460</dd></div>
+      <div class="stat"><dt class="stat-label">Standard double</dt><dd class="stat-num">$8,749</dd></div>
+      <div class="stat"><dt class="stat-label">Most common full year</dt><dd class="stat-num">$13,174</dd></div>
+      <div class="stat"><dt class="stat-label">Housing application fee</dt><dd class="stat-num">$100</dd></div>
+    </dl>
+
+    <div class="wrap layout">
+      <nav class="toc" aria-label="On this page">
+        <p>On this page</p>
+        <ol>
+          <li><a href="#calculator">Yearly cost calculator</a></li>
+          <li><a href="#room-rates">Room rates</a></li>
+          <li><a href="#meal-plans">Meal plan costs</a></li>
+          <li><a href="#totals">What a year costs</a></li>
+          <li><a href="#forgotten">Costs people forget</a></li>
+          <li><a href="#faq-heading">FAQ</a></li>
+        </ol>
+      </nav>
+
+      <article class="prose">
+        <aside class="takeaways" aria-labelledby="takeaways-heading">
+          <h2 id="takeaways-heading">Key takeaways</h2>
+          <ul>
+            <li>A standard double is <strong>$8,749</strong> a year in most halls; Catlett and Petersen doubles are <strong>$10,048</strong>.</li>
+            <li>Most first-years must add a meal plan of <strong>$4,425 to $4,835</strong>.</li>
+            <li>A realistic full year runs from about <strong>$10,500 to $14,900</strong>.</li>
+            <li>Every rate covers the full academic year, with utilities, A/C, and Wi-Fi included.</li>
+          </ul>
+        </aside>
+
+        <h2 id="calculator">Yearly cost calculator</h2>
+        <p>Pick a room and a meal plan to see your total for the 2026-27 year. Charges are split evenly between fall and spring on your U-Bill.</p>
+        <form class="calc" id="cost-calc" aria-labelledby="calc-heading">
+          <h3 id="calc-heading">Price out your year</h3>
+          <label>Room type and hall
+            <select id="calc-room">
+              <option value="6460" data-kitchen="no">Quad, Hillcrest ($6,460)</option>
+              <option value="7326" data-kitchen="no">Quad, Catlett ($7,326)</option>
+              <option value="7411" data-kitchen="no">Triple, standard ($7,411)</option>
+              <option value="8687" data-kitchen="no">Triple, Catlett or Petersen ($8,687)</option>
+              <option value="8749" data-kitchen="no" selected>Double, standard ($8,749)</option>
+              <option value="8749" data-kitchen="yes">Double, Mayflower suite ($8,749)</option>
+              <option value="10048" data-kitchen="no">Double, Catlett or Petersen ($10,048)</option>
+              <option value="10048" data-kitchen="yes">Single studio, Mayflower ($10,048)</option>
+              <option value="10813" data-kitchen="no">Double with private bathroom ($10,813)</option>
+              <option value="11297" data-kitchen="no">Single, standard ($11,297)</option>
+              <option value="12632" data-kitchen="no">Single, Catlett or Petersen ($12,632)</option>
+            </select>
+          </label>
+          <label>Meal plan
+            <select id="calc-meal">
+              <option value="4425" selected>Block 160 ($4,425)</option>
+              <option value="4630">Weekly 14 ($4,630)</option>
+              <option value="4835">Unlimited ($4,835)</option>
+              <option value="1750">Block 50, kitchen rooms only ($1,750)</option>
+            </select>
+          </label>
+          <output id="calc-out" for="calc-room calc-meal" aria-live="polite">
+            <span class="calc-total">$13,174</span>
+            <span class="calc-detail">$6,587 per semester. Room includes $120 in laundry dollars.</span>
+          </output>
+        </form>
+
+        <h2 id="room-rates">University of Iowa room rates by room type</h2>
+        <p>Rates are per person for the full academic year, including fall and spring breaks. Every room is furnished and air conditioned, with heat, electricity, water, internet, and Wi-Fi included. Each rate below includes $120 in laundry dollars.</p>
+        <div class="table-scroll">
+          <table>
+            <caption>2026-27 room rates, per person</caption>
+            <thead><tr><th scope="col">Room type</th><th scope="col">Where</th><th scope="col">Per year</th><th scope="col" class="hide-sm">Per semester</th></tr></thead>
+            <tbody>
+              <tr><td>Quad</td><td>Hillcrest</td><td class="num">$6,460</td><td class="num hide-sm">$3,230</td></tr>
+              <tr><td>Quad</td><td>Catlett</td><td class="num">$7,326</td><td class="num hide-sm">$3,663</td></tr>
+              <tr><td>Triple</td><td>Burge, Currier, Daum, Hillcrest, Stanley</td><td class="num">$7,411</td><td class="num hide-sm">$3,705.50</td></tr>
+              <tr><td>Triple</td><td>Catlett, Petersen</td><td class="num">$8,687</td><td class="num hide-sm">$4,343.50</td></tr>
+              <tr><td>Double</td><td>Burge, Currier, Daum, Hillcrest, Mayflower, Rienow, Slater, Stanley</td><td class="num">$8,749</td><td class="num hide-sm">$4,374.50</td></tr>
+              <tr><td>Double</td><td>Catlett, Petersen</td><td class="num">$10,048</td><td class="num hide-sm">$5,024</td></tr>
+              <tr><td>Double, private bathroom</td><td>Burge, Daum, Hillcrest, Stanley; limited in Rienow, Slater</td><td class="num">$10,813</td><td class="num hide-sm">$5,406.50</td></tr>
+              <tr><td>Single</td><td>Most halls</td><td class="num">$11,297</td><td class="num hide-sm">$5,648.50</td></tr>
+              <tr><td>Single</td><td>Catlett, Petersen (limited)</td><td class="num">$12,632</td><td class="num hide-sm">$6,316</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Not sure which hall is worth the premium? Our <a href="dorms-ranked.html">University of Iowa dorms ranked</a> list compares all ten.</p>
+
+        <h2 id="meal-plans">University of Iowa meal plan costs</h2>
+        <p>If your room does not have a university-supplied kitchen, you must pick Unlimited, Weekly 14, or Block 160. Swipes work at the three all-you-care-to-eat dining halls: Burge, Catlett, and Hillcrest Market Places. Students in rooms with a kitchen, like the Mayflower suites, can also choose Block 50.</p>
+        <div class="table-scroll">
+          <table>
+            <caption>2026-27 meal plans</caption>
+            <thead><tr><th scope="col">Plan</th><th scope="col">Dining hall swipes</th><th scope="col">Per year</th><th scope="col" class="hide-sm">Per semester</th></tr></thead>
+            <tbody>
+              <tr><td>Unlimited</td><td>Unlimited, plus 5 guest meals</td><td class="num">$4,835</td><td class="num hide-sm">$2,417.50</td></tr>
+              <tr><td>Weekly 14</td><td>14 per week, plus 5 guest meals</td><td class="num">$4,630</td><td class="num hide-sm">$2,315</td></tr>
+              <tr><td>Block 160</td><td>160 per semester, plus 5 guest meals</td><td class="num">$4,425</td><td class="num hide-sm">$2,212.50</td></tr>
+              <tr><td>Block 50</td><td>50 per semester, kitchen rooms only</td><td class="num">$1,750</td><td class="num hide-sm">$875</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Which meal plan should you pick?</h3>
+        <ul>
+          <li><strong>Unlimited</strong> if you live in Burge, Catlett, or Hillcrest and will eat in the dining hall most days. It is only $410 more than Block 160.</li>
+          <li><strong>Block 160</strong> if you skip breakfast or eat off campus some days. That is about ten swipes a week.</li>
+          <li><strong>Weekly 14</strong> if you like a steady two meals a day and would waste a block.</li>
+          <li><strong>Block 50</strong> only if your room has a kitchen and you will really cook.</li>
+        </ul>
+        <p>Unused dining dollars carry over from fall to spring, but expire at the end of spring semester.</p>
+
+        <h2 id="totals">What a full year actually costs</h2>
+        <div class="table-scroll">
+          <table>
+            <caption>Sample yearly totals, room plus meal plan</caption>
+            <thead><tr><th scope="col">Setup</th><th scope="col">Per year</th></tr></thead>
+            <tbody>
+              <tr><td>Mayflower double plus Block 50</td><td class="num">$10,499</td></tr>
+              <tr><td>Hillcrest quad plus Block 160</td><td class="num">$10,885</td></tr>
+              <tr><td>Standard double plus Block 160</td><td class="num">$13,174</td></tr>
+              <tr><td>Standard double plus Unlimited</td><td class="num">$13,584</td></tr>
+              <tr><td>Catlett or Petersen double plus Unlimited</td><td class="num">$14,883</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The gap between a standard double and a Catlett or Petersen double is $1,299 a year.</p>
+
+        <h2 id="forgotten">Costs people forget</h2>
+        <ul>
+          <li>A $100 non-refundable housing application fee.</li>
+          <li>Laundry beyond the included $120: $1.75 per wash and $1.25 per dry.</li>
+          <li>Winter break housing: a flat $350 if you stay on campus.</li>
+          <li>Early move-in: $35 per day if you are approved to arrive early.</li>
+        </ul>
+
+        <div class="callout">
+          <p><strong>Split costs with your roommate early.</strong> Decide who brings the fridge, microwave, and rug before move-in. Still looking for one? Start with our <a href="roommate-finder.html">University of Iowa roommate finder</a> guide.</p>
+        </div>
+
+        {{FAQ}}
+
+        <nav class="related" aria-label="Related guides">
+          <a href="dorms-ranked.html">Iowa dorms ranked<small>Is the premium worth it?</small></a>
+          <a href="make-friends-before-college.html">Make friends before college<small>Six steps that work</small></a>
+        </nav>
+        <p class="source-note">All prices come from the 2026-27 Room and Meal Plan Rates sheet published by University Housing and Dining, updated April 30, 2026. Confirm current prices with the university before you budget.</p>
+      </article>
+    </div>
+    <script src="js/cost-calculator.js" defer></script>
+<!-- FAQ -->
+Q: How much does it cost to live in the dorms at the University of Iowa?
+A: For 2026-27, a standard double is $8,749 a year and the cheapest required meal plan is $4,425, so the most common setup costs $13,174 for the year. Totals range from about $10,500 to $14,900 depending on hall, room type, and meal plan.
+Q: What is the cheapest dorm at the University of Iowa?
+A: The cheapest room is a Hillcrest quad at $6,460 a year. With a meal plan, a Mayflower double plus the Block 50 plan, about $10,499, can be cheaper overall because Mayflower suites have kitchens.
+Q: How much is the University of Iowa meal plan?
+A: In 2026-27 the Unlimited plan is $4,835, Weekly 14 is $4,630, Block 160 is $4,425, and Block 50 is $1,750. Block 50 is only available to students in rooms with a university-supplied kitchen.
+Q: Are Catlett and Petersen more expensive?
+A: Yes. A Catlett or Petersen double is $10,048 a year, $1,299 more than a standard double in the other halls.
+Q: What is included in the room rate?
+A: Heat, electricity, air conditioning, water, internet, Wi-Fi, garbage service, $120 in laundry dollars, and furniture including a lofted twin XL bed, desk, chair, and dresser.
