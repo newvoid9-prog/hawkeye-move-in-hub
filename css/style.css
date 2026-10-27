@@ -214,3 +214,8 @@ td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
   .card, .site-nav a { transition: none; }
   .card:hover { transform: none; }
 }
+
+@media (max-width: 600px) {
+  .table-scroll th:nth-child(4), .table-scroll td:nth-child(4) { display: none; }
+  th, td { padding: 0.55rem 0.5rem; }
+}
