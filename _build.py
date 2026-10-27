@@ -4,6 +4,7 @@ Run from the repo root:  python3 _build.py
 Files and folders starting with "_" are skipped by GitHub Pages (Jekyll), so
 the sources and this script are never published as pages.
 """
+import hashlib
 import html
 import json
 from pathlib import Path
@@ -53,6 +54,11 @@ PAGES = [
         "description": "How to make friends before college starts: six practical steps for incoming freshmen, from class Instagram pages to your future floor, so move-in day is not day one.",
     },
 ]
+
+
+def asset_version(path):
+    """Short content hash so browsers fetch a changed file instead of a cached copy."""
+    return hashlib.sha1((ROOT / path).read_bytes()).hexdigest()[:8]
 
 
 def page_url(file):
@@ -163,7 +169,7 @@ def render(page):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v={asset_version("css/style.css")}">
   {structured_data(page, faqs)}
 </head>
 <body>
