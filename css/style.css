@@ -235,3 +235,8 @@ td.num { font-variant-numeric: tabular-nums; white-space: nowrap; font-family: v
   *, *::before, *::after { transition: none !important; }
   .hero-art { transform: none; }
 }
+
+/* Lists styled as components should not inherit prose list indentation */
+.prose .halls, .prose .steps, .prose .tags { padding-left: 0; }
+.hall { padding-left: 5.4rem; }
+.hall::before { width: 3.6rem; text-align: center; left: 0.9rem; }
